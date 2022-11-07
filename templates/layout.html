@@ -33,9 +33,30 @@
     <div class="wrapper">
 
 
-        {% block header %}
+        {% block menu %}
     
-        {% endblock header %}
+        <header class = 'header'>
+
+           <!-- ul>li*7>a генератор списка. ul>li*7 показывает сколько эл-тов будет в списке. ul>li*7>a добавляет тег <a> в каждый из эл-тов -->
+            
+            <!-- <ul>
+                <li><a href="main_menu2">BlockBlog</a></li>
+            </ul> -->
+
+            <ul class = 'main_menu'>
+                <li id = 'li1'><a href="#">BlockBlog</a></li>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Регистрация</a></li>
+                <li><a href="#">Логин</a></li>
+                <li><a href="#">Аккаунт</a></li>
+                <li><a href="#">Создать</a></li>
+                <li><a href="#">Выход</a></li>
+            </ul>
+
+        </header>
+    
+        {% endblock menu %}
 
 
         {% block content %}
@@ -45,11 +66,23 @@
 
         {% block mainpage %}
 
+        <div class="content">
+
+
+
+        </div>
+
+
         {% endblock mainpage %}
 
 
         {% block footer %}
     
+        <footer class = 'footer'><p>&#169; SSenk<p><br>
+        <p>VK: <a href="https://vk.com/kirssenk", target="_blank">@kirssenk</a></p>
+
+        </footer>
+
         {% endblock footer %}
 
 

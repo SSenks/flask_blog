@@ -1,9 +1,199 @@
-h1 {
-    color: red;
+
+/* Отключение стилей браузера и html */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+
 }
 
+html, body {
+
+    height: 100%;
+
+ }
+
+/*
 .wrapper {
 
     outline: 1px orange solid;
 
+} */
+
+/* MAUIN MENU */
+
+.header {
+
+    height: 30px; /* Размер хедера */
+
+    outline: 3px #429117 solid; /* обводка хедера ( ширина, цвет, тип заливки )*/
+
+    background-color: #429117; /* фоновый цвет хедера */
+
 }
+
+/* Работаем со списком */
+
+.main_menu {
+
+    display: flex; /* тип отображения */
+
+    justify-content: flex-end; /* расположение контента */
+
+    padding-right: 50px; /* отступы справа */
+
+}
+
+.main_menu #li1 {
+
+    font-size: 10px;
+
+    margin-right: 580px;
+
+    font-family: MINECRAFT;
+
+}
+
+/* Работаем с ссылками */
+
+.main_menu a {
+
+    text-decoration: none; /* убираем декорации ссылок */
+
+    color: black; /* цвет текста */
+
+    font-weight: 400; /* Толщина букв */
+
+    margin: 5px;
+
+}
+
+.main_menu li {
+
+    list-style: none;
+    
+    margin-right: 5px;
+
+    margin-top: 7px;
+
+    /* width: 100px; */
+
+    /* outline: 1px red solid; */
+
+    box-shadow: 1px 1px 1px #316614;
+
+    font-family: TROIKA;
+
+    border-radius: 50px;
+
+}
+
+.BlockBlog_text {
+
+    /* align-items: flex-start; */
+    align-self: flex-end
+
+}
+
+.main_menu li:hover {
+
+    transition-duration: 0.2s;
+
+    /* box-shadow: 0.5px 0.5px 0.5px #0a6f8d; */
+
+    opacity: .40;
+
+}
+
+/*  Работа с wrapepr */
+
+.wrapper {
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+
+}
+
+.footer {
+
+    height: 55px;
+    
+    /* outline: 5px red solid; */
+
+    background-color: #429117;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex: 0 0 auto;
+
+    font-size: 15px;
+    
+    font-family: TROIKA;
+
+}
+
+.footer p {
+
+    margin: 100px;
+
+}
+
+.footer a {
+
+    text-decoration: none;
+
+    color: pink;
+
+}
+
+/* Работа с контентом */
+
+.content {
+
+    width: 60%;
+
+    margin: 100px auto 0;
+
+    flex: 1 0 auto;
+
+}
+
+
+
+@font-face {
+
+    font-family: "SFNS"; 
+    src: url("fonts/sfns-display-bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+
+} 
+
+
+@font-face {
+
+    font-family: "TROIKA"; 
+    src: url("fonts/troika.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+
+} 
+
+@font-face {
+
+    font-family: "MINECRAFT"; 
+    src: url("fonts/minecraft.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+
+} 
