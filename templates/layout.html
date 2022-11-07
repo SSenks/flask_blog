@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/style.css') }}">
+
+    {% block title %}
+
+        {% if title %}
+
+            <title>Flask - {{ title }}</title>
+
+            {% else %}
+
+            <title> Transferred Error. Pleace check your code </title>
+
+            <center> <h1> Eror </h1> </center>
+
+            <center><h1> Transferred Error. Pleace check your code </h1></center>
+
+        {% endif  %}
+
+    {% endblock title %}
+ 
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+
+        {% block header %}
+    
+        {% endblock header %}
+
+
+        {% block content %}
+
+        {% endblock content %}
+
+
+        {% block mainpage %}
+
+        {% endblock mainpage %}
+
+
+        {% block footer %}
+    
+        {% endblock footer %}
+
+
+    </div>
+
+</body>
+
+</html>
