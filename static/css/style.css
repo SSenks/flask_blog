@@ -16,20 +16,19 @@ html, body {
 
  }
 
-/*
+
 .wrapper {
 
-    outline: 1px orange solid;
+    background-color: #adadad;
 
-} */
+}
 
 /* MAUIN MENU */
 
 .header {
 
-    height: 30px; /* Размер хедера */
-
-    outline: 3px #429117 solid; /* обводка хедера ( ширина, цвет, тип заливки )*/
+    height: 37px; /* Размер хедера */
+    
 
     background-color: #429117; /* фоновый цвет хедера */
 
@@ -120,6 +119,8 @@ html, body {
 
 }
 
+/* работа с footer */
+
 .footer {
 
     height: 55px;
@@ -168,6 +169,27 @@ html, body {
 
 }
 
+/* работа с theme */
+
+/* работа с post_container */
+
+.post_container {
+
+    outline: 1px 1px 1px red solid;
+
+    display: flex;
+
+    margin: 0 auto;
+
+    width: 50%;
+    
+    margin-left: 300px;
+
+    height: 50%;
+
+
+
+}
 
 
 @font-face {
